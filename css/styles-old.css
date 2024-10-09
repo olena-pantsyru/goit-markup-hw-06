@@ -48,7 +48,7 @@
 
 
 
-  .button-hero {
+  /* .button-hero {
     font-size: 16;
     font-weight: 500;
     line-height: 1.5;
@@ -70,14 +70,14 @@
   .button-hero:hover,
   .button-hero:focus {
     background-color: #404bbf;
-  }
+  } */
 
   /* section advantage */
 
   /* hide title */
   
 
-  .page-advantage {
+  /* .page-advantage {
     padding: 120px 0;
   }
 
@@ -88,9 +88,9 @@
 
   .advantage-item {
     width: calc((100% - 72px) / 4);
-  }
+  } */
 
-  .advantage-icon {
+  /* .advantage-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -100,23 +100,23 @@
     border: 1px solid #8e8f99;
     margin-bottom: 8px;
 
-  }
+  } */
 
-  .title-advantage-item {
+  /* .title-advantage-item {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-  }
+  } */
 
-  .text-advantage-item {
+  /* .text-advantage-item {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-  }
+  } */
 
   /* section team */
 

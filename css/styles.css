@@ -310,7 +310,7 @@
     .page-hero {
         max-width: 320px;
         background-color: #2e2f42;
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herofon.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/herofon-mobile-1.jpg);
         padding-top: 72px;
         padding-bottom: 72px;
         margin-right: auto;
@@ -319,6 +319,13 @@
         background-position: center;
         background-size: cover;
     }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .page-hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/herofon-mobile@2x.jpg);
+    } 
+}
     .title-hero {
         font-size: 36px;
         line-height: 1.11;
@@ -332,9 +339,9 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 72px;
-      }
+    }
 
-      .button-hero {
+    .button-hero {
         font-size: 16;
         font-weight: 500;
         line-height: 1.5;
@@ -351,39 +358,140 @@
         display: block;
         margin: 0 auto;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      
-      .button-hero:hover,
-      .button-hero:focus {
+    }
+
+    .button-hero:hover,
+    .button-hero:focus {
         background-color: #404bbf;
-      }
+    }
     
 
 
     @media screen and (min-width: 768px) {
         .page-hero {
             max-width: 768px;
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herofon.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/herofon-tablet-1.jpg);
             padding-top: 112px;
             padding-bottom: 112px;
         }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .page-hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/herofon-tablet@2x.jpg);
+        } 
+    }
+
         .title-hero {
             font-size: 56px;
             line-height: 1.07;
             max-width: 496px;
             margin-bottom: 36px;
         }
-    }
+
+}
 
 
     @media screen and (min-width: 1158px) {
         .page-hero {
             max-width: 1440px;
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herofon.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/herofon-desctop-1.jpg);
             padding-top: 188px;
             padding-bottom: 188px;
         }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .page-hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/herofon-desctop@2x.jpg);
+        } 
+    }
         .title-hero {
             margin-bottom: 48px;
         }
+    }
+
+    
+    /* advantage */
+
+    .advantage-icon {
+        display: none;
+    }
+
+    .page-advantage {
+        padding: 96px 0;
+      }
+
+      .advantage-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px;
+      }
+    
+      .advantage-item {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .title-advantage-item {
+        font-size: 36px;
+        line-height: 1.1;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+        margin-bottom: 8px;
+    }
+
+    .text-advantage-item {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+
+    @media screen and (min-width: 768px) {
+        
+        .advantage-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        .advantage-item {
+            flex-direction: column;
+            width: calc((100% - 24px) /2);
+        }
+
+    }
+
+
+
+    @media screen and (min-width: 1158px) {
+        .page-advantage {
+            padding: 120px 0;
+          }
+        
+          .advantage-item {
+            width: calc((100% - 72px) / 4);
+}
+.title-advantage-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  .text-advantage-item {
+    font-weight: 400;
+}
+.advantage-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+
+  } 
     }
