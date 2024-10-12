@@ -833,7 +833,7 @@
             transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             fill: #f4f4fd;
         }
-        
+
         .networks-link:hover, .networks-link:focus {
             background-color: #31d0aa;
           }
@@ -879,8 +879,10 @@
           }
 
           .footer-container {
-            display: flex;
-            align-items: baseline;
+            justify-content: center;
+            gap: 0px;
+            flex-wrap: nowrap;
+            padding-left: 15px;
             
             }
             
@@ -898,3 +900,97 @@
 
              
       }
+
+      /* subscribe form + sub btn */
+
+      .subscribe-text {
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #ffffff;
+        text-align: center;
+      }
+      .subscribe-form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+
+      }
+
+      .subscribe-form {
+        display: flex;
+        gap: 24px;
+      }
+      
+      
+      .form-label {
+      flex-grow: 1;
+      }
+      
+      .email-input {
+        width: 264px;
+        height: 40px;
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        padding-left: 16px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        color: #ffffff;
+      
+      }
+      
+      .email-input::placeholder {
+        color: #ffffff;
+      }
+      
+      .subscribe-button {
+        min-width: 165px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        cursor: pointer;
+        background-color: #4d5ae5;
+        border: none;
+        border-radius: 4px;
+      }
+      
+      .subscribe-icon {
+        margin-left: 16px;
+        fill: #fff;
+      }
+
+
+
+      @media screen and (min-width: 768px) {
+        .subscribe-text {
+            text-align: left;
+        }
+
+        .subscribe-form {
+            flex-direction: row;
+            align-items: normal;
+            gap: 24px;
+        }
+      }
+
+
+
+
+
+      @media screen and (min-width: 1158px) {
+      
+      
+    }
