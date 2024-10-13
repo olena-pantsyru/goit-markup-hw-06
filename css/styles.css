@@ -481,9 +481,7 @@
     
     /* advantage */
 
-    .advantage-icon {
-        display: none;
-    }
+    
 
     .page-advantage {
         padding: 96px 0;
@@ -496,11 +494,15 @@
       }
     
       .advantage-item {
-        display: flex;
-        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      .advantage-icon {
+        display: none;
       }
 
       .title-advantage-item {
+        text-align: center;
         font-size: 36px;
         line-height: 1.1;
         letter-spacing: 0.02em;
@@ -521,13 +523,16 @@
         .advantage-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 24px;
+            column-gap: 24px;
         }
         .advantage-item {
             flex-direction: column;
             width: calc((100% - 24px) /2);
         }
-
+        .title-advantage-item {
+          text-align: left;
+        }
+        
     }
 
 
@@ -567,6 +572,9 @@
         background-color: #f4f4fd;
         padding: 96px 0;
     }
+    .team-container {
+      padding: 0 27px;
+    }
 
     .title-team {
         font-weight: 700;
@@ -581,10 +589,11 @@
     .team-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
+        gap: 72px;
       }
 
       .team-card {
+        
         background-color: #fff;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
           0px 1px 1px rgba(46, 47, 66, 0.16),
@@ -614,6 +623,7 @@
         text-align: center;
         color: #434455;
         text-align: center;
+        margin-bottom: 8px;
       }
 
       .social-media-icon {
@@ -637,7 +647,6 @@
         height: 40px;
         background-color: #4d5ae5;
         border-radius: 50%;
-        margin-top: 8px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
     
@@ -658,13 +667,16 @@
     @media screen and (min-width: 768px) {
 
         .team-container {
-            width: 552px;
+            width: 584px;
         }
         .team-list {
-            display: flex;
-            flex-wrap: wrap;
+          column-gap: 24px;
+          row-gap: 64px;
+          flex-direction: row;
           }
-          .team-card {flex-direction: column;
+
+          .team-card {
+          flex-direction: column;
           width: calc((100% - 24px) /2);
         }
 
@@ -957,7 +969,7 @@
 
             .footer-logo {
                 display: inline-block;
-                margin-bottom: 16px;
+            
                   }
             .networks {
                 margin-right: 80px;
@@ -996,7 +1008,7 @@
       }
       
       .email-input {
-        width: 264px;
+        width: 288px;
         height: 40px;
         border: 1px solid #ffffff;
         background-color: transparent;
@@ -1040,6 +1052,11 @@
 
 
       @media screen and (min-width: 768px) {
+        .email-input {
+          width: 264px;
+        }
+
+       
         .subscribe-text {
             text-align: left;
         }
