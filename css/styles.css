@@ -72,8 +72,8 @@
  @media screen and (min-width: 1158px) {
      .container {
          max-width: 1158px;
-         padding-left: 16px;
-     padding-right: 16px;
+         padding-left: 15px;
+     padding-right: 15px;
         
      }
  }
@@ -221,8 +221,10 @@
 
     /* mobile menu */
 
+    /* position: fixed; */
+
     .mobile-menu {
-     position: fixed;
+      position: fixed;
      top: 0;
      left: 0;
      width: 100%;
@@ -278,7 +280,8 @@
     
     
          .close-icon {
-             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+          fill: #2e2f42;
+          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
          }
 
     
@@ -286,8 +289,78 @@
     .mobile-nav {
         margin-bottom: auto;
     }
-   
+
+    .mobile-nav-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+
     
+    .mobile-nav-link {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.11;
+      letter-spacing: 0.02em;
+      color: #2e2f42;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      
+    .mobile-nav-link.current {
+      color: #404bbf;
+    }
+    
+    .mobile-contacts {
+      font-style: normal;
+    }
+    
+    .mobile-contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 168px;
+    }
+
+    .mobile-contacts-link {
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .mobile-contacts-link.current {
+      color: #404bbf;
+}
+  .mobail-social-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    width: 280px;
+    height: 40px;
+    margin-top: 48px;
+  }
+  .mobail-social-link {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .mobile-social-icon {
+    fill: #ffffff;
+
+  }
+
 
 
 
